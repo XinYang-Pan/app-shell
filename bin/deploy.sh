@@ -12,7 +12,7 @@ mkdir -p ${APP_HOME}
 ####################################################
 # stop app
 ####################################################
-sh ${APP_ROOT}/bin/stop.sh ${APP_NAME} ${ENV}
+sh ${SHELL_HOME}/stop.sh ${APP_NAME} ${ENV}
 
 ####################################################
 # source compile
@@ -28,4 +28,4 @@ cp ./target/${APP_NAME}*.jar ${APP_HOME}/${APP_NAME}.jar
 ####################################################
 # start app
 ####################################################
-sh ${APP_ROOT}/bin/start.sh ${APP_NAME} ${ENV}
+sh ${SHELL_HOME}/start.sh ${APP_NAME} ${ENV}

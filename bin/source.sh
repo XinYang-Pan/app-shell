@@ -20,6 +20,9 @@ PATH=$PATH:${JAVA_HOME}/bin:${M2_HOME}/bin
 # JAVA_SOURCE_PATH
 JAVA_SOURCE_PATH=.
 
+# SHELL_HOME
+SHELL_HOME=/app/bin
+
 #
 export APP_NAME
 export ENV
@@ -27,3 +30,4 @@ export APP_ROOT
 export APP_HOME
 export PATH
 export JAVA_SOURCE_PATH
+export SHELL_HOME
