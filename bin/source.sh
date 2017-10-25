@@ -10,7 +10,7 @@ if [ "${ENV}" == "dev" ]; then
 fi
 
 # APP_HOME
-APP_HOME=/${APP_ROOT}/${APP_NAME}
+APP_HOME=${APP_ROOT}/${APP_NAME}
 
 # PATH
 JAVA_HOME=/usr/java/jdk1.8.0_144
