@@ -26,6 +26,10 @@ mvn clean package
 ####################################################
 cp ./target/${APP_NAME}*.jar ${APP_HOME}/${APP_NAME}.jar
 cp ./${APP_NAME}.conf.${ENV} ${APP_HOME}/
+
+sudo rm -f /etc/init.d/${SERVICE_NAME}
+sudo ln -s ${APP_HOME}/${APP_NAME}.jar /etc/init.d/${SERVICE_NAME}
+
 chmod -R 777 ${APP_HOME}
 chown -R ${USER_NAME}:${USER_NAME} ${APP_HOME}
 
