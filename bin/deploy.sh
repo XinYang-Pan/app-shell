@@ -24,6 +24,7 @@ mvn clean package
 ####################################################
 # copy jar
 ####################################################
+sudo rm -rf ${APP_HOME}
 cp ./target/${APP_NAME}*.jar ${APP_HOME}/${APP_NAME}.jar
 cp ./${APP_NAME}.conf.${ENV} ${APP_HOME}/${APP_NAME}.conf
 
