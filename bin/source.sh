@@ -3,10 +3,16 @@
 APP_NAME=$1
 ENV=$2
 
-# APP_ROOT
+# USER_NAME
+USER_NAME=${APP_NAME}
+
+# APP_ROOT SERVICE_NAME
 APP_ROOT=/app
+SERVICE_NAME=${APP_NAME}
+
 if [ "${ENV}" == "dev" ]; then
 	APP_ROOT=/appdev
+	SERVICE_NAME=${APP_NAME}_${ENV}
 fi
 
 # APP_HOME
@@ -27,6 +33,7 @@ SHELL_HOME=/app/bin
 export APP_NAME
 export ENV
 export APP_ROOT
+export SERVICE_NAME
 export APP_HOME
 export PATH
 export JAVA_SOURCE_PATH
