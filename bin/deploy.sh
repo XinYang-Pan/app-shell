@@ -23,8 +23,8 @@ mvn clean package
 ####################################################
 # copy jar
 ####################################################
-sudo rm -rf ${APP_HOME}
-sudo mkdir -p ${APP_HOME}
+rm -rf ${APP_HOME}
+mkdir -p ${APP_HOME}
 
 cp ./target/${APP_NAME}*.jar ${APP_HOME}/${APP_NAME}.jar
 cp ./${APP_NAME}.conf.${ENV} ${APP_HOME}/${APP_NAME}.conf
