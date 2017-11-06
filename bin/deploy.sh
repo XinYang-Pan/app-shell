@@ -8,7 +8,6 @@
 #  JAVA_SOURCE_PATH
 #  SERVICE_NAME
 
-mkdir -p ${APP_HOME}
 
 ####################################################
 # stop app
@@ -25,6 +24,8 @@ mvn clean package
 # copy jar
 ####################################################
 sudo rm -rf ${APP_HOME}
+sudo mkdir -p ${APP_HOME}
+
 cp ./target/${APP_NAME}*.jar ${APP_HOME}/${APP_NAME}.jar
 cp ./${APP_NAME}.conf.${ENV} ${APP_HOME}/${APP_NAME}.conf
 
