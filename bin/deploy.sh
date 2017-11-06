@@ -25,7 +25,7 @@ mvn clean package
 # copy jar
 ####################################################
 cp ./target/${APP_NAME}*.jar ${APP_HOME}/${APP_NAME}.jar
-cp ./${APP_NAME}.conf.${ENV} ${APP_HOME}/
+cp ./${APP_NAME}.conf.${ENV} ${APP_HOME}/${APP_NAME}.conf
 
 sudo rm -f /etc/init.d/${SERVICE_NAME}
 sudo ln -s ${APP_HOME}/${APP_NAME}.jar /etc/init.d/${SERVICE_NAME}
