@@ -32,6 +32,7 @@ SHELL_HOME=/app/bin
 #
 export APP_NAME
 export ENV
+export USER_NAME
 export APP_ROOT
 export SERVICE_NAME
 export APP_HOME
