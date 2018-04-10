@@ -20,7 +20,7 @@ APP_HOME=${APP_ROOT}/${APP_NAME}
 
 # PATH
 JAVA_HOME=/usr/java/default
-M2_HOME=/usr/local/apache-maven-3.5.3
+M2_HOME=/opt/apache-maven-3.5.3
 PATH=$PATH:${JAVA_HOME}/bin:${M2_HOME}/bin
 
 # JAVA_SOURCE_PATH
