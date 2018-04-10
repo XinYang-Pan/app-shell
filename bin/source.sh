@@ -19,7 +19,7 @@ fi
 APP_HOME=${APP_ROOT}/${APP_NAME}
 
 # PATH
-JAVA_HOME=/usr/java/jdk1.8.0_144
+JAVA_HOME=/usr/java/default
 M2_HOME=/usr/local/apache-maven-3.5.3
 PATH=$PATH:${JAVA_HOME}/bin:${M2_HOME}/bin
 
