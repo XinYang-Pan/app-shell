@@ -18,7 +18,7 @@ sudo service ${SERVICE_NAME} stop
 # source compile
 ####################################################
 cd ${JAVA_SOURCE_PATH}
-mvn clean package
+mvn clean package -U
 
 ####################################################
 # copy jar
